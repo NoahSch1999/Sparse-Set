@@ -228,6 +228,18 @@ namespace aZero
 		}
 
 		/// <summary>
+		/// Returns a reference to the contiguous array of elements.
+		/// </summary>
+		/// <returns></returns>
+		std::vector<ElementType>& GetData() { return m_Elements; }
+
+		/// <summary>
+		/// Returns a constant reference to the contiguous array of elements.
+		/// </summary>
+		/// <returns></returns>
+		const std::vector<ElementType>& GetData() const { return m_Elements; }
+
+		/// <summary>
 		/// Checks whether an entry for the input ID exists.
 		/// </summary>
 		/// <param name="ID">ID check an entry for</param>
